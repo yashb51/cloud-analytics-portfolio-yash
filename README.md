@@ -1,5 +1,5 @@
 
-# 📊 AWS Data Analytics Platform: Employee Remuneration & Expense Analysis (City of Vancouver)
+# 📊 AWS Data Analytics Platform: Employee Remuneration & Expense Analysis 
 
 This project demonstrates an end-to-end **Data Analytics Platform (DAP)** implementation using AWS Cloud services to analyze public employee remuneration datasets from the [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/pages/home/).
 
@@ -11,7 +11,7 @@ This project demonstrates an end-to-end **Data Analytics Platform (DAP)** implem
 
 In this phase, the goal was to build a foundational data analytics platform using serverless AWS services:
 
-- **Data Ingestion**: Raw CSV files were uploaded to S3 (`hr-raw-yas` bucket).
+- **Data Ingestion**: Raw CSV files were uploaded to S3.
 - **Data Profiling**: AWS Glue DataBrew was used to identify missing values, outliers, and abnormal distributions.
 - **Data Cleaning**: DataBrew cleaning recipes were created to rename columns and validate data formatting.
 - **Data Transformation**: Cleaned and profiled data was exported in both CSV and Parquet formats with Snappy compression.
@@ -27,7 +27,7 @@ This phase extends the platform by introducing governance, security, and monitor
   - Executed business queries on remuneration and expense datasets.
   - Queried metrics like average/min/max remuneration and categorized results by job title.
 - **Data Security with AWS KMS**:
-  - Configured custom KMS key (`hr-emp-key-yash`) to encrypt/decrypt S3 data buckets.
+  - Configured custom KMS key to encrypt/decrypt S3 data buckets.
   - Ensured fine-grained control over data access and protection.
 - **Data Governance**:
   - Performed automated data quality checks using AWS Glue Data Quality.
